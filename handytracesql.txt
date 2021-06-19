@@ -1,0 +1,21 @@
+CREATE TABLE user_list
+(
+Name varchar(255),
+Location varchar(255),
+Date varchar(255),
+Time_from varchar(255),
+Time_to varchar(255),
+Status varchar(255),
+Friends varchar(255)
+);	
+
+INSERT INTO user_list values('Steve Rogers', '30th and Walnut', '04/21/2020', '13:00', '14:00', 'Positive', 'yes');
+INSERT INTO user_list values('Tony Stark', '30th and Walnut', '04/21/2020', '14:00', '15:00', 'Positive', 'yes');
+INSERT INTO user_list values('Natasha Romanoff', 'Philly Airport', '04/22/2020', '16:00', '19:00', 'Positive', 'yes');
+INSERT INTO user_list values('Thor Odinson', '12th and Filbert', '04/22/2020', '4:00', '8:00', 'Positive', 'no');
+INSERT INTO user_list values('Bruce Banner', '13th and Market', '04/24/2020', '12:00', '13:30', 'Negative', 'no');
+INSERT INTO user_list values('Clint Barton', 'Philly Airport', '04/25/2020', '13:00', '14:00', 'Positive', 'no');
+INSERT INTO user_list values('Sam Wilson', '12th and Filbert', '04/28/2020', '7:00', '15:00', 'Negative', 'no');
+INSERT INTO user_list values('Peter Parker', '	Philly Airport', '04/19/2020', '8:00', '15:00', 'Negative', 'no');
+INSERT INTO user_list values('Carol Denvers', 'Philly Airport', '04/20/2020', '19:00', '20:00', 'Positive', 'no');
+

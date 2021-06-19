@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title> Sign-up Page</title>
+  	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='handytrace.css') }}"/>
+ 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+  <body class="w3-animate-opacity" >
+  	<div class="logocenter w3-animate-opacity" >
+ 		<img src="{{ url_for('static', filename='logo.png') }}" alt="HandyTrace Logo" >
+ 	</div>
+  	<div class="unique1">
+  		<h1> Sign up </h1>
+  		<table class="stable">
+ 			<tr>
+ 				<td>Name: </td>
+ 				<td> <input type="text" id="username" /> </td>
+ 			</tr>
+ 			<tr>
+ 				<td>Date of Birth: </td>
+ 				<td><input type="text" id="dob" />  </td> 
+ 			</tr>
+ 			<tr>
+ 				<td>Email: </td>
+ 				<td><input type="text" id="email" />  </td> 
+ 			</tr>
+ 			<tr>
+ 				<td>Username: </td>
+ 				<td><input type="text" id="username" />  </td> 
+ 			</tr>
+ 			<tr>
+ 				<td>Password: </td>
+ 				<td><input type="text" id="password" />  </td> 
+ 			</tr>
+ 			<tr>
+ 				<td>Confirm Password: </td>
+ 				<td><input type="text" id="cpassword" />  </td> 
+ 			</tr>
+ 		</table>
+  		<a class="button" href="/home" > Sign-up </a>
+  	</div>
+
+  </body>
+</html>

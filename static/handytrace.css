@@ -1,0 +1,101 @@
+body{
+	background: #A8D0E6;
+   font-family: Verdana, Arial, sans-serif;
+}
+
+ul.headerbar {
+	list-style-type: none;
+	overflow: hidden;
+	background-color: #333;
+
+}
+
+li.headerbar a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li.headerbar  {
+  float: left;
+}
+
+table.stable {
+	margin-left:auto;
+	margin-right:auto;
+	padding:50px;
+}
+
+.unique1 {
+	margin-left: 300px;
+	margin-right: 300px;
+	padding-bottom: 30px;
+	padding-top:10px;
+	text-align: center;
+	border: 2px;
+	border-radius:10px;
+	background-color:#F7F9FB;
+	box-shadow:0px 1px 6px 2px rgba(0,0,0,0.55);
+}
+.unique2 {
+	text-align:center;
+}
+
+.button {
+	border: 2px solid gray;
+	border-radius:5px;
+	text-decoration:none;
+	color:white;
+	background-color:#29648A;
+	padding:10px;
+}
+
+
+.logocenter{
+	text-align:center;
+}
+.logoside{
+	text-align:left;
+}
+
+.logothumbnail{
+	height:40px;
+	width:40px;
+	padding:0px;
+	margin:0px;
+	display: inline;
+}
+
+
+
+td{
+	text-align:left;
+}
+
+table.splist {
+  font-family: Verdana, Arial, sans-serif; 
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table.splist td, table.splist th {
+  padding: 8px;
+  border:1px #A8D0E6;
+  text-align:left;
+}
+.success{
+	color:green;
+}
+table.splist tr:nth-child(even){background-color: #f2f2f2;}
+table.splist tr:nth-child(odd){background-color: #D0E4F5;}
+
+table.splist tr:hover {background-color: #ddd;}
+
+table.splist th {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  background-color: #0B6FA4;
+  color: white;
+}

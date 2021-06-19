@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+  	<title> Home Page </title>
+  	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='handytrace.css') }}"/>
+ 	<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+  <body class="home">
+  	<header>
+  		<nav>
+  			<ul class="headerbar">
+  				<!-- <li><a href="" ><img src="logo.png" class="logothumbnail" alt="HandyTrace Logo" > </a> </li> -->
+  				<li class="headerbar"><a href="/friends" >Friends </a></li>
+  				<li class="headerbar" ><a href="/addfriends" > Add Friends </a></li>
+  				<li class="headerbar"><a href="/searchplace"> Search Place</a></li>
+          <li class="headerbar"><a href="/mylocations" > My Locations </a></li>
+  				<li class="headerbar"><a href="/welcome"> Logout </a></li>	
+  			</ul>				
+  		</nav>
+  	</header>
+  	<div class="unique2">
+      <form method="post" action="">
+
+  		<h2> Update locations you have been to</h2>
+  		Covid-19 Status: <select name="status">
+  			<option value="0"> Confirmed status </option>
+  			<option value="1"> Tested Positive </option>
+  			<option value="2"> Tested Negative</option>
+  			<option value="3"> Unknown </option>
+  		</select>
+      
+  		<table class="stable">
+  			<tr>
+  				<td> Place </td>
+          <td> Date </td>
+  				<td> From </td>
+  				<td> To </td>
+  			</tr>
+  			<tr>
+  				<td> <input type="text" name="location"/></td>
+          <td> <input type="text" name="date"/></td>
+  				<td> <input type="time" name="from"/> </td>
+  				<td> <input type="time" name="to" /> </td>
+        </tr>
+        
+
+  		</table>
+      <button class="button" type="submit"> Add </button>
+      <p class="success"> {{ message }} </p>
+    </form>
+  	
+  		
+      </div>
+  </body>
+ </html>

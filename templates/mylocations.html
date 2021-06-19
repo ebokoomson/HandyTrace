@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ 	<title> Sign-in Page </title>
+ 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='handytrace.css') }}"/>
+ 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ </head>
+ <body>
+ 	<header>
+  		<nav>
+  			<ul class="headerbar">
+  				<!-- <li><a href="" ><img src="logo.png" class="logothumbnail" alt="HandyTrace Logo" > </a> </li> -->
+  				<li class="headerbar" ><a href="/home"> Home </a> </li>
+          <li class="headerbar"><a href="/friends" >Friends </a></li>
+          <li class="headerbar"><a href="/addfriends" > Add Friends </a></li>
+          <li class="headerbar"><a href="/searchplace" > Search Place </a></li>
+          <li class="headerbar"><a href="/mylocations" > My Locations </a></li>
+          <li class="headerbar"><a href="/welcome"> Logout </a></li>  	
+  			</ul>				
+  		</nav>
+  	</header>
+
+  	<div>
+  		<table class="splist">
+    	<tr>
+    		<th> Location </th>
+    		<th> From </th>
+        <th> To </th>
+    	</tr>
+  		{% for x in list1 %}
+  		<tr>
+    		<td> {{x[0]}} </td>
+    		<td> {{x[1]}} </td>
+        <td> {{x[2]}} </td>
+    	</tr>
+  		{% endfor %}
+		</table>
+	</div>
+ </body>
+</html>
